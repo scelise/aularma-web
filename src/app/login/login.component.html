@@ -1,0 +1,41 @@
+<div class="container-fluid vh-100 d-flex">
+
+    <div class="form-container">
+        <form>
+        <h2>Inicio de sesión</h2>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo">
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingrese su contraseña">
+            <button mat-icon-button matSuffix (click)="hide = !hide" class="icon-margin">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="forgot-password-container">
+            <button mat-button class="forgot-password-btn">¿Olvidaste tu contraseña?</button>
+          </div>
+          <button mat-raised-button class="login-btn">Iniciar sesión</button>
+          <div class="register-container">
+            <span class="register-text">¿No tienes una cuenta? </span>
+            <button mat-button class="register-link">Regístrate</button>
+          </div>
+        </form>
+    </div>
+
+    <div class="image-container">
+      <img src="/images/background.jpg" alt="Inicio de sesión">
+      <div class="image-mask"></div>
+
+      <div class="content">
+        <img src="/images/logo.png" alt="Logo de la app" class="logo">
+        <h1 class="welcome-text">Bienvenido</h1>
+        <p class="subtitle">Inicia sesión para continuar</p>
+      </div>
+    </div>
+  </div>
+  
+  
