@@ -1,0 +1,29 @@
+<div class="container-fluid vh-100 d-flex">
+
+    <div class="form-container">
+        <button mat-button class="back-button" (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon> Volver
+        </button>
+        <form>
+        <h2>Restablece tu contraseña</h2>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo">
+          </mat-form-field>                          
+          <button mat-raised-button class="login-btn">Enviar código</button>          
+        </form>
+    </div>
+
+    <div class="image-container">
+      <img src="/images/background.jpg" alt="Inicio de sesión">
+      <div class="image-mask"></div>
+
+      <div class="content">
+        <img src="/images/logo.png" alt="Logo de la app" class="logo">
+        <h1 class="welcome-text">Bienvenido</h1>
+        <p class="subtitle">Inicia sesión para continuar</p>
+      </div>
+    </div>
+  </div>
+  
+  
