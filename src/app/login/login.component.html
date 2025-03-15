@@ -16,12 +16,12 @@
             </button>
           </mat-form-field>
           <div class="forgot-password-container">
-            <button mat-button class="forgot-password-btn">¿Olvidaste tu contraseña?</button>
+            <button mat-button class="forgot-password-btn" (click)="irAResetPassword()">¿Olvidaste tu contraseña?</button>
           </div>
-          <button mat-raised-button class="login-btn">Iniciar sesión</button>
+          <button mat-raised-button class="login-btn" (click)="irACalendario()">Iniciar sesión</button>
           <div class="register-container">
             <span class="register-text">¿No tienes una cuenta? </span>
-            <button mat-button class="register-link">Regístrate</button>
+            <button mat-button class="register-link" (click)="irARegistro()">Regístrate</button>
           </div>
         </form>
     </div>

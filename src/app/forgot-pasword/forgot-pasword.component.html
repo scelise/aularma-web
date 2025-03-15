@@ -1,7 +1,7 @@
 <div class="container-fluid vh-100 d-flex">
 
     <div class="form-container">
-        <button mat-button class="back-button">
+        <button mat-button class="back-button" (click)="irALogin()">
             <mat-icon>arrow_back</mat-icon> Volver
         </button>
         <form>
@@ -10,7 +10,7 @@
             <mat-label>Correo electrónico</mat-label>
             <input matInput type="email" placeholder="Ingrese su correo">
           </mat-form-field>                          
-          <button mat-raised-button class="login-btn">Enviar código</button>          
+          <button mat-raised-button class="login-btn"  (click)="irAResetPassword()">Enviar código</button>          
         </form>
     </div>
 
@@ -20,8 +20,8 @@
 
       <div class="content">
         <img src="/images/logo.png" alt="Logo de la app" class="logo">
-        <h1 class="welcome-text">Bienvenido</h1>
-        <p class="subtitle">Inicia sesión para continuar</p>
+        <h1 class="welcome-text">Restablecer contraseña</h1>
+        <p class="subtitle">Enviaremos un código a tu correo electrónico</p>
       </div>
     </div>
   </div>

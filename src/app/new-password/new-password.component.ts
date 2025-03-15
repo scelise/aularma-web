@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-password',
@@ -24,4 +25,9 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class NewPasswordComponent {
   hide = true;
+  constructor(private router: Router) {}
+    
+  irALogin() {
+    this.router.navigate(['/login']);
+  }
 }

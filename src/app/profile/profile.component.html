@@ -1,0 +1,73 @@
+<header class="header">
+    <div class="header-logo" (click)="irACalendar()">
+        <img src="/images/logo-color.png" alt="Logo">
+        <span class="header-title">Aularma</span>
+    </div>
+    <div class="header-profile">
+        <mat-icon>account_circle</mat-icon>
+    </div>
+</header>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <mat-card class="profile-container">
+          <div class="image-container">
+            <img src="/images/profile.jpg" alt="Foto de perfil" class="profile-image">
+          </div>
+          <h3 class="username">Sergio Augusto Celis Esteban</h3>
+          <button mat-raised-button class="logout-button" (click)="irALogin()">Cerrar sesión</button>
+        </mat-card>
+      </div>
+
+      <div class="col-md-8">
+        <mat-card class="profile-container">
+            <h2 class="section-title">Datos personales</h2>
+
+            <div class="form-group">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Correo</mat-label>
+                <input matInput type="email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Teléfono</mat-label>
+                <input matInput type="tel"> 
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Dirección</mat-label>
+                <input matInput>
+            </mat-form-field>
+            </div>
+
+            <h2 class="section-title">Cambio de contraseña</h2>
+
+            <div class="form-group">
+            <mat-form-field class="password-field" appearance="outline">
+                <mat-label>Nueva contraseña</mat-label>
+                <input matInput type="password">
+                <button mat-icon-button matSuffix>
+                <mat-icon>visibility</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <mat-form-field class="password-field" appearance="outline">
+                <mat-label>Confirmar contraseña</mat-label>
+                <input matInput type="password">
+                <button mat-icon-button matSuffix>
+                <mat-icon>visibility</mat-icon>
+                </button>
+            </mat-form-field>
+            </div>
+  
+          <button mat-raised-button color="primary" class="save-button">Guardar cambios</button>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

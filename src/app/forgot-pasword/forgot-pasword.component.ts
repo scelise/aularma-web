@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { FormBuilder} from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-pasword',
@@ -24,10 +25,18 @@ import { CommonModule } from '@angular/common';
   styleUrl: './forgot-pasword.component.css'
 })
 export class ForgotPaswordComponent {  
+
   logoPath = 'assets/images/logo.png';
   backgroundPath = 'assets/images/background.jpg';
 
-  constructor(private fb: FormBuilder) {    
+  constructor(private router: Router) {}
+  
+  irAResetPassword() {
+    this.router.navigate(['/newpassword']);
+  }
+
+  irALogin() {
+    this.router.navigate(['/login']);
   }
 
 }

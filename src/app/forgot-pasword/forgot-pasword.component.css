@@ -95,8 +95,11 @@
     font-size: 14px;
     font-weight: 400;
   }
-  
-  
-  
-  
-  
+
+  .back-button {
+    position: absolute;
+    top: 88px;
+    left: 64px;
+    z-index: 10;
+    color: #6D7183 !important;
+}

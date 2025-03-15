@@ -1,36 +1,34 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-create-user',
+  selector: 'app-profile',
   standalone: true,
   imports: [
-    CommonModule,
-    MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    FormsModule
+    MatFormFieldModule
   ],
-  templateUrl: './create-user.component.html',
-  styleUrl: './create-user.component.css'
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.css'
 })
-export class CreateUserComponent {
+export class ProfileComponent {
 
   constructor(private router: Router) {}
-  
-  hide = true;
-
+      
   irALogin() {
     this.router.navigate(['/login']);
+  }
+
+  irACalendar() {
+    this.router.navigate(['/calendar']);
   }
 
 }

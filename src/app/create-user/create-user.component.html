@@ -2,8 +2,8 @@
 
     <div class="form-container">        
         <form>
-        <h2>Crea tu cuenta</h2>
-        <mat-form-field appearance="outline" class="full-width">
+          <h2>Crea tu cuenta</h2>
+          <mat-form-field appearance="outline" class="full-width">
             <mat-label>Nombre</mat-label>
             <input matInput type="email" placeholder="Ingrese su correo">
           </mat-form-field>
@@ -15,7 +15,7 @@
             <mat-label>Dirección</mat-label>
             <input matInput type="email" placeholder="Ingrese su correo">
           </mat-form-field>
-        <mat-form-field appearance="outline" class="full-width">
+          <mat-form-field appearance="outline" class="full-width">
             <mat-label>Contraseña</mat-label>
             <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingrese su contraseña">
             <button mat-icon-button matSuffix (click)="hide = !hide" class="icon-margin">
@@ -31,8 +31,8 @@
           </mat-form-field>                         
           <button mat-raised-button class="login-btn">Crear cuenta</button>
           <div class="register-container">
-            <span class="register-text">¿ya tienes una cuenta? </span>
-            <button mat-button class="register-link">Inicia sesión</button>
+            <span class="register-text">¿Ya tienes una cuenta? </span>
+            <button mat-button class="register-link" (click)="irALogin()">Inicia sesión</button>
           </div>          
         </form>
     </div>
@@ -43,10 +43,10 @@
 
       <div class="content">
         <img src="/images/logo.png" alt="Logo de la app" class="logo">
-        <h1 class="welcome-text">Bienvenido</h1>
-        <p class="subtitle">Inicia sesión para continuar</p>
+        <h1 class="welcome-text">Regístrate</h1>
+        <p class="subtitle">Crea una cuenta en Aularma</p>
       </div>
     </div>
-  </div>
+</div>
   
   
