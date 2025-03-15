@@ -1,22 +1,10 @@
-.container {
-    display: flex;
-    height: 100vh;
-}
- 
+
   h2 {
     font-size: 32px;
     font-weight: 400;
     color: #41444F;
     margin-bottom: 80px;
     text-align: left;
-  }
-  
-  
-  .image-container {
-    width: 100vh;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
   }
   
   .image-container img {
@@ -61,18 +49,34 @@
     font-weight: 400;
   }
 
-  .form-container {
-    flex: 1;
+  .container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-container {
+    width: 50vw; /* La imagen ocupa el 50% de la pantalla */
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
+
+.form-container {
+    flex: 1; /* Ocupa el espacio restante */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%;
+    margin: auto; /* Lo centra horizontalmente */
+}
+
   
   .full-width {
     width: 100%;
+    max-width: 100%;
   }
 
   .icon-margin {
