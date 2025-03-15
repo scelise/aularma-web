@@ -1,0 +1,52 @@
+<div class="container-fluid vh-100 d-flex">
+
+    <div class="form-container">        
+        <form>
+        <h2>Crea tu cuenta</h2>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Dirección</mat-label>
+            <input matInput type="email" placeholder="Ingrese su correo">
+          </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingrese su contraseña">
+            <button mat-icon-button matSuffix (click)="hide = !hide" class="icon-margin">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Confirmar contraseña</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" placeholder="Ingrese su contraseña">
+            <button mat-icon-button matSuffix (click)="hide = !hide" class="icon-margin">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>                         
+          <button mat-raised-button class="login-btn">Crear cuenta</button>
+          <div class="register-container">
+            <span class="register-text">¿ya tienes una cuenta? </span>
+            <button mat-button class="register-link">Inicia sesión</button>
+          </div>          
+        </form>
+    </div>
+
+    <div class="image-container">
+      <img src="/images/background.jpg" alt="Inicio de sesión">
+      <div class="image-mask"></div>
+
+      <div class="content">
+        <img src="/images/logo.png" alt="Logo de la app" class="logo">
+        <h1 class="welcome-text">Bienvenido</h1>
+        <p class="subtitle">Inicia sesión para continuar</p>
+      </div>
+    </div>
+  </div>
+  
+  
